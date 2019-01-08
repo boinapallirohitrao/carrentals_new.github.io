@@ -105,6 +105,7 @@ section.skybooker-vendors{
 p.title {
     margin: 5px;
     color: #d6d3d3;
+    font-size: 14px;
 }
 button.search-btn {
     background: #39b54a;
@@ -138,12 +139,19 @@ box-shadow: -1px 7px 7px -20px rgba(255,255,255,1); */
 p.sale_contain {
     font-size: 16px;
 }
-        @media(max-width:768px){
-            .skybooker-collpase{display: none;}
-            .skybooker-collpase ul{padding:0px;}
-            .skybooker-collpase ul li{float: none;}
-            .skybooker-nav-left, .skybooker-nav-right{float: none;}
-            .navbar-brand{width: 60%;}  
-            #banner{padding-top: 20%;}
-            .sale_section{margin-top: 5%;s}
-        }   
+button.search-btn.disabled {
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: .65;
+}
+@media(max-width:768px){
+    .fixed-top{width:100%}
+    .skybooker-collpase{display: none;}
+    .skybooker-collpase ul{padding:0px;}
+    .skybooker-collpase ul li{float: none;}
+    .skybooker-nav-left, .skybooker-nav-right{float: none;}
+    .navbar-brand{width: 60%;}  
+    #banner{padding: 20% 0%;height:auto;}
+    .sale_section{margin-top: 5%;}
+    .skybooker-vendors .col{margin-bottom: 3%;}
+}   
