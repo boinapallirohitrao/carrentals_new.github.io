@@ -64,7 +64,7 @@
                             <p class="title">Pickup Location</p>  
                             <div class="input-group mb-2">
                                 <div class="input-group-text"><img src="https://sandbox-uploads.imgix.net/u/1546948481-ea026de454f9ee6eb14ae9f94c0a52a7"></div>
-                                <input type="text" class="form-control" id="map" name="pixk" placeholder="New York City, NY" required>
+                                <input type="text" class="form-control" id="map" name="pixk" placeholder="New York City, NY" >
                             </div>
                         </div>
                          </div>
@@ -73,7 +73,7 @@
                                  <p class="title">Drop off Location</p>  
                                    <div class="input-group mb-2">
                                        <div class="input-group-text"><img src="https://sandbox-uploads.imgix.net/u/1546948481-ea026de454f9ee6eb14ae9f94c0a52a7"></div>
-                                       <input type="text" class="form-control" id="map2" name="pixk" placeholder="New York City, NY" required>
+                                       <input type="text" class="form-control" id="map2" name="pixk" placeholder="New York City, NY" >
                                    </div>
                                </div>
                          </div>
@@ -85,7 +85,7 @@
                                        <div class="input-group-text">
                                             <img src="https://sandbox-uploads.imgix.net/u/1546948662-3630958e8febd6a31c09c183fc1ce7a6">    
                                        </div>
-                                       <input type="text"   class="form-control" id="caleran-ex-6-5-start" name="pixk" placeholder="12/01/2019" required>
+                                       <input type="text"   class="form-control calendar" id="caleran-ex-6-5-start" name="pixk" placeholder="12/01/2019" >
                                    </div>
                                </div>
                          </div>                         
@@ -96,7 +96,7 @@
                                        <div class="input-group-text">
                                             <img src="https://sandbox-uploads.imgix.net/u/1546948662-3630958e8febd6a31c09c183fc1ce7a6">  
                                        </div>
-                                       <input type="text"    class="form-control" id="caleran-ex-6-5-end" name="pixk" placeholder="20/01/2019" required>
+                                       <input type="text"    class="form-control calendar" id="caleran-ex-6-5-end" name="pixk" placeholder="20/01/2019" >
                                    </div>
                                </div>
                          </div>
@@ -108,7 +108,7 @@
                                 <div class="form-group">
                                    <div class="input-group mb-2">
                                        <div class="input-group-text"> <img src="https://sandbox-uploads.imgix.net/u/1546948557-d8ad1f3f8d49cec79a43ce523885e77e"></div>
-                                       <input type="text" class="form-control" id="pick" name="pixk" placeholder="05:09" required>
+                                       <input type="text" class="form-control" id="pick" name="pixk" placeholder="05:09" >
                                    </div>
                                </div>
                          </div>                         
@@ -116,7 +116,7 @@
                                 <div class="form-group"> 
                                    <div class="input-group mb-2">
                                        <div class="input-group-text"><img src="https://sandbox-uploads.imgix.net/u/1546948557-d8ad1f3f8d49cec79a43ce523885e77e"></div>
-                                       <input type="text" class="form-control" id="pick" name="pixk" placeholder="10:00" required>
+                                       <input type="text" class="form-control" id="pick" name="pixk" placeholder="10:00" >
                                    </div>
                                </div>
                          </div>
@@ -124,8 +124,11 @@
                         </div>
 
                         <button type="submit" class="search-btn">Search Cabs <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> </button>	
-                                                </form>
-
+                    </form>
+                    <div id="loading" style="display: none;text-align: center;margin-top: 10px;color: #fff;">
+                        <span>We are processing your request</span><i class="fa fa-spinner fa-spin fa-3x fa-fw" style="color: #fff;font-size: 20px;margin-left: 8px;"></i>
+                        <span class="sr-only">Loading...</span>
+                      </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-xs-6">
@@ -280,7 +283,26 @@
       });
    
    </script>
+
+
+
    <script>
+
+$('button.search-btn').click(function(){
+
+if($('input#map').val() == '' || $('input.calendar').val() == ''){
+    alert('Please Fill the field');
+    return false;
+}
+
+jQuery("#loading").show();
+$('button.search-btn').addClass('disabled');
+
+$('form[name=test]').attr('action','https://www.rentalcars.com/SearchResults.do?locationName=Las+Palmas+Airport&dropLocationName=Las+Palmas+Airport&country=Spain+-+Canary+Islands&dropCountry=Spain+-+Canary+Islands&city=Gran+Canaria&dropCity=Gran+Canaria&location=3591&dropLocation=3591&puDay=11&puMonth=1&puYear=2019&doDay=13&doMonth=1&doYear=2019&puHour=10&puMinute=0&doHour=10&doMinute=0&driversAge=35&page=SearchResults.do&affiliateCode=lonelyplanet&cor=gb&preflang=en&prefcurrency=usd');
+
+$('form[name=test]').submit();
+
+});
        function getGooglePlaces(){
        var input = document.getElementById('map');
        var input2 = document.getElementById('map2');
