@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./css/custom.css" >
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <title>SkyBooker::CarsRental</title>
+  </head>
+  <body>
+           <!--top header-->
+           <header>
+            <nav class="navbar  navbar-expand-lg navbar-skybooker fixed-top top-navbar" data-toggle="sticky-onscroll">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://www.skybooker.com/Images/logo_small.png" class="skybooker_logo" alt="Skybooker" title="Skybooker"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                    </button>
+
+                 <div class="collapse skybooker-collpase" id="navbarSupportedContent">
+                        <ul class="skybooker-nav-left">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Flights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hotels</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Car Rentals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Transfer</a>
+                            </li>
+                        </ul>
+
+                        <ul class="skybooker-nav-right">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#">My Account</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Service&Contact</a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End top header-->
+
+        <section id="banner">
+                <div class="container">
+                        <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <div class="search_form p-4">
+                <form method="POST" name="test"  action="" class="trip-type-frm">
+                     <div class="row">
+                       <div class="col-6">
+                         <div class="form-group">
+                            <p class="title">Pickup Location</p>  
+                            <div class="input-group mb-2">
+                                <div class="input-group-text"><img src="https://sandbox-uploads.imgix.net/u/1546948481-ea026de454f9ee6eb14ae9f94c0a52a7"></div>
+                                <input type="text" class="form-control" id="map" name="pixk" placeholder="New York City, NY" required>
+                            </div>
+                        </div>
+                         </div>
+                         <div class="col-6">
+                                <div class="form-group">
+                                 <p class="title">Drop off Location</p>  
+                                   <div class="input-group mb-2">
+                                       <div class="input-group-text"><img src="https://sandbox-uploads.imgix.net/u/1546948481-ea026de454f9ee6eb14ae9f94c0a52a7"></div>
+                                       <input type="text" class="form-control" id="map2" name="pixk" placeholder="New York City, NY" required>
+                                   </div>
+                               </div>
+                         </div>
+
+                         <div class="col-6">
+                                <div class="form-group">
+                                        <p class="title">Pick-up date</p>
+                                   <div class="input-group mb-2">
+                                       <div class="input-group-text">
+                                            <img src="https://sandbox-uploads.imgix.net/u/1546948662-3630958e8febd6a31c09c183fc1ce7a6">    
+                                       </div>
+                                       <input type="text"   class="form-control" id="caleran-ex-6-5-start" name="pixk" placeholder="12/01/2019" required>
+                                   </div>
+                               </div>
+                         </div>                         
+                         <div class="col-6">
+                                <div class="form-group">
+                                        <p class="title">Drop-off date</p>
+                                   <div class="input-group mb-2">
+                                       <div class="input-group-text">
+                                            <img src="https://sandbox-uploads.imgix.net/u/1546948662-3630958e8febd6a31c09c183fc1ce7a6">  
+                                       </div>
+                                       <input type="text"    class="form-control" id="caleran-ex-6-5-end" name="pixk" placeholder="20/01/2019" required>
+                                   </div>
+                               </div>
+                         </div>
+
+
+
+
+                         <div class="col-6">
+                                <div class="form-group">
+                                   <div class="input-group mb-2">
+                                       <div class="input-group-text"> <img src="https://sandbox-uploads.imgix.net/u/1546948557-d8ad1f3f8d49cec79a43ce523885e77e"></div>
+                                       <input type="text" class="form-control" id="pick" name="pixk" placeholder="05:09" required>
+                                   </div>
+                               </div>
+                         </div>                         
+                         <div class="col-6">
+                                <div class="form-group"> 
+                                   <div class="input-group mb-2">
+                                       <div class="input-group-text"><img src="https://sandbox-uploads.imgix.net/u/1546948557-d8ad1f3f8d49cec79a43ce523885e77e"></div>
+                                       <input type="text" class="form-control" id="pick" name="pixk" placeholder="10:00" required>
+                                   </div>
+                               </div>
+                         </div>
+
+                        </div>
+
+                        <button type="submit" class="search-btn">Search Cabs <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> </button>	
+                                                </form>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                        <div class="sale_section p-4">
+                                                <p class="sale_heading">Sale Now On</p>
+                                                <p class="sale_sub_heading">Save Up To 50%</p>
+                                                <p class="sale_contain">All Destinations Worldwide</p>
+                                                <p class="sale_contain">Sale ends on January 14. *T&C apply</p>
+
+                                        </div>
+                                </div>
+
+                        </div>
+
+                </div>
+
+        </section>
+
+
+        
+
+        <section class="skybooker-vendors p-3"> 
+                <div class="container">
+                    <div class="row">
+                            <div class="col">
+                            <img src="https://ct-supplierimage.imgix.net/car/avis.pdf?auto=format&amp;w=107" alt="avis">
+                            </div>
+                            <div class="col">
+                            <img src="https://ct-supplierimage.imgix.net/car/hertz.pdf?auto=format&amp;w=107" alt="hertz">
+                            </div>
+                            <div class="col">
+                            <img src="https://ct-supplierimage.imgix.net/car/europcar.pdf?auto=format&amp;w=107" alt="europcar">
+                            </div>
+                            <div class="col">
+                            <img src="https://ct-supplierimage.imgix.net/car/thrifty.pdf?auto=format&amp;w=107" alt="thrifty">
+                            </div>
+                            <div class="col">
+                            <img src="https://ct-supplierimage.imgix.net/car/budget.pdf?auto=format&amp;w=107" alt="budget">
+                            </div>
+                            <div class="col">
+                            <img src="https://ct-supplierimage.imgix.net/car/national.pdf?auto=format&amp;w=107" alt="national">
+                            </div>
+                            <div class="col">
+                            <img src="https://ct-supplierimage.imgix.net/car/alamo.pdf?auto=format&amp;w=107" alt="alamo">
+                    </div>            
+                  </div>
+                </div>
+ </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js" ></script>
+
+    <link href="https://boinapallirohitrao.github.io/carrentals.github.io/caleran.min.css" rel="stylesheet"/>
+    <script src="https://boinapallirohitrao.github.io/carrentals.github.io/moment.min.js"></script>
+    <script src="https://boinapallirohitrao.github.io/carrentals.github.io/caleran.min.js"></script>
+   
+    <script type="text/javascript">
+       var startDate, endDate, startInstance, endInstance;
+      var fillInputs = function () {
+          startInstance.$elem.val(startDate ? startDate.locale(startInstance.config.format).format(startInstance.config.format) : "");
+          endInstance.$elem.val(endDate ? endDate.locale(endInstance.config.format).format(endInstance.config.format) : "");
+      };
+      $("#caleran-ex-6-5-start").caleran({
+          startEmpty: $("#caleran-ex-6-5-start").val() === "",
+          startDate: $("#caleran-ex-6-5-start").val(),
+          endDate: $("#caleran-ex-6-5-end").val(),
+          minDate: moment().subtract(1, "today").startOf("today"),
+          showOn:"botoom",autoAlign:false,
+          showHeader: false,
+          enableKeyboard: false,
+          oninit: function (instance) {
+              startInstance = instance;
+              if (!instance.config.startEmpty && instance.config.startDate) {
+                  instance.$elem.val(instance.config.startDate.locale(instance.config.format).format(instance.config.format));
+                  startDate = instance.config.startDate.clone();
+              }
+          },
+          onbeforeshow: function (instance) {
+              if (startDate) {
+                  startInstance.config.startDate = startDate;
+                  endInstance.config.startDate = startDate;
+              }
+              if (endDate) {
+                  startInstance.config.endDate = endDate.clone();
+                  endInstance.config.endDate = endDate.clone();
+              }
+              fillInputs();
+              instance.updateHeader();
+              instance.reDrawCells();
+          },
+          onfirstselect: function (instance, start) {
+              startDate = start.clone();
+              startInstance.globals.startSelected = false;
+              startInstance.hideDropdown();
+              endInstance.showDropdown();
+              endInstance.config.minDate = startDate.clone();
+              endInstance.config.startDate = startDate.clone();
+              endInstance.config.endDate = null;
+              endInstance.globals.startSelected = true;
+              endInstance.globals.endSelected = false;
+              endInstance.globals.firstValueSelected = true;
+              endInstance.setDisplayDate(start);
+              if (endDate && startDate.isAfter(endDate)) {
+                  endInstance.globals.endDate = endDate.clone();
+              }
+              endInstance.updateHeader();
+              endInstance.reDrawCells();
+              fillInputs();
+          }
+      });
+      $("#caleran-ex-6-5-end").caleran({
+          startEmpty: $("#caleran-ex-6-5-end").val() === "",
+          startDate: $("#caleran-ex-6-5-start").val(),
+          endDate: $("#caleran-ex-6-5-end").val(),
+          enableKeyboard: false,
+          autoCloseOnSelect: true,
+          showOn:"botoom",autoAlign:false,
+          showHeader: false,
+          oninit: function (instance) {
+              endInstance = instance;
+              if (!instance.config.startEmpty && instance.config.endDate) {
+                  instance.$elem.val(instance.config.endDate.locale(instance.config.format).format(instance.config.format));
+                  endDate = instance.config.endDate.clone();
+              }
+          },
+          onbeforeshow: function (instance) {
+              if (startDate) {
+                  startInstance.config.startDate = startDate;
+                  endInstance.config.startDate = startDate;
+              }
+              if (endDate) {
+                  startInstance.config.endDate = endDate.clone();
+                  endInstance.config.endDate = endDate.clone();
+              }
+              fillInputs();
+              instance.updateHeader();
+              instance.reDrawCells();
+          },
+          onafterselect: function (instance, start, end) {
+              startDate = start.clone();
+              endDate = end.clone();
+              endInstance.hideDropdown();
+              startInstance.config.endDate = endDate.clone();
+              startInstance.globals.firstValueSelected = true;
+              fillInputs();
+              endInstance.globals.startSelected = true;
+              endInstance.globals.endSelected = false;
+          }
+      });
+   
+   </script>
+   <script>
+       function getGooglePlaces(){
+       var input = document.getElementById('map');
+       var input2 = document.getElementById('map2');
+       var autocomplete1 = new google.maps.places.Autocomplete(input);
+       var autocomplete2 = new google.maps.places.Autocomplete(input2);
+       }
+   </script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVlwNSA5nctv_pOwK6XrIrd8i2K3NFBT4&libraries=places&callback=getGooglePlaces"></script>
+  </body>
+</html>

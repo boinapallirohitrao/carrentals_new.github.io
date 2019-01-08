@@ -1,0 +1,149 @@
+   .navbar-skybooker {
+            background: #f3f0f0;
+            color: #fff;
+        }
+        .navbar-skybooker a{
+                color: #333;
+                font-weight: 600;
+        }
+    img.skybooker_logo{max-width:65%;}
+        .skybooker-collpase{        
+            display: inline-block;
+             width: 100%;}
+             .skybooker-collpase ul{
+                width: auto;
+               
+                 margin-bottom: 0px
+             } 
+             .skybooker-collpase ul li{
+                 list-style-type: none;
+                 float: left;
+             }
+             .skybooker-nav-left{ float: left;}
+             .skybooker-nav-right{
+                float: right;
+            }
+#banner{
+    height: 100vh;
+    background: url(https://sandbox-uploads.imgix.net/u/1546950286-ba052dc0a399fd1b1be6a6c255efe678) no-repeat;
+    background-size: cover;
+    padding-top: 8%;
+}
+
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+/*
+ *  STYLE 2
+ */
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color:#0061a5;
+}
+/* vendors */
+section.skybooker-vendors{
+       text-align: center;
+}
+
+.search_form, .sale_section {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+}
+.form-group input {
+    background: transparent;
+    border: 0px;
+    color:#fff;
+}
+.input-group-text {
+    background: transparent;
+    border: 0px;
+    width: 20px;   
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+   color: #fff;
+   opacity: 0.6;
+}
+.form-control:focus{
+    background-color: transparent;
+    color: #fff;
+    box-shadow: none;
+}
+p.title {
+    margin: 5px;
+    color: #d6d3d3;
+}
+button.search-btn {
+    background: #39b54a;
+    border: 0px;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    /* -webkit-box-shadow: -1px 7px 7px -20px rgba(255,255,255,1);
+-moz-box-shadow: -1px 7px 7px -20px rgba(255,255,255,1);
+box-shadow: -1px 7px 7px -20px rgba(255,255,255,1); */
+}
+.input-group.mb-2 {
+    border: 1px solid #ded7d7;
+    border-radius: 2px;
+}
+.sale_section{
+    color:#fff;
+}
+.sale_section p{
+    margin: 5px 0px; 
+}
+.sale_heading {
+    font-size: 30px;
+    font-weight: 600;
+}
+.sale_sub_heading {
+    font-size: 30px;
+    font-weight: 500;
+}
+p.sale_contain {
+    font-size: 16px;
+}
+        @media(max-width:768px){
+            .skybooker-collpase{display: none;}
+            .skybooker-collpase ul{padding:0px;}
+            .skybooker-collpase ul li{float: none;}
+            .skybooker-nav-left, .skybooker-nav-right{float: none;}
+            .navbar-brand{width: 60%;}  
+            #banner{padding-top: 20%;}
+            .sale_section{margin-top: 5%;s}
+        }   
