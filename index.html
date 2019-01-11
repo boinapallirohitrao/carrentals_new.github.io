@@ -18,9 +18,15 @@
                 <div class="container">
                     <a class="navbar-brand" href="#">
                         <img src="https://www.skybooker.com/Images/logo_small.png" class="skybooker_logo" alt="Skybooker" title="Skybooker"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fa fa-bars"></i>
-                    </button>
+                    </button> -->
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    
+                            <i class="fas fa-user-circle   pr-1 mobilelogin_icon" ></i>
+                          </button>
+                    
 
                  <div class="collapse skybooker-collpase" id="navbarSupportedContent">
                         <ul class="skybooker-nav-left">
@@ -36,17 +42,228 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Transfer</a>
                             </li>
+                            <li class="nav-item dropdown mega-dropdown">
+                                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Explore <span >
+                                    <i class="fa fa-chevron-down linear"></i></span></a>				
+                                    <ul class="dropdown-menu mega-dropdown-menu">
+                                        <div class="container">
+                                            <div class="col-sm-12 p-3">
+                                                <p class="">Tabs Section    </p>
+                                                <p class="">Tabs Section    </p>
+                                                <p class="">Tabs Section    </p>
+                                                <p class="">Tabs Section    </p>
+                                                <p class="">Tabs Section    </p>
+                                            </div>
+                                        </div>
+
+                                    
+                                    </ul>				
+                                </li>
                         </ul>
 
                         <ul class="skybooker-nav-right">
-                                <li class="nav-item">
-                                        <a class="nav-link" href="#">My Account</a>
+                                    <li class="nav-item dropdown mega-dropdown">
+                                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">My Account <span >
+                                               <i class="fa fa-chevron-down linear"></i></span></a>				
+                                               <ul class="dropdown-menu mega-dropdown-menu myaccount">
+                                                   <div class="container">
+                                                       <div class="col-sm-12">
+                                                            <p  class="Search_text">Recent Searches</p>
+                                                            <ul>
+                                                            <li class="second_flight">
+                                                                    <p  class="plane_title">British AirLines</p>
+                                                                    <p class="Plane_selected">09:14 <span >(LHR)</span> <i  class="fas fa-arrow-right"></i> 03:14 <span >(ZAG)</span></p>
+                                                                    <p class="plane_details">1 Stop VIE . Duration: 4hrs 05mins</p>
+                                                            </li>
+
+                                                            <li class="second_flight">
+                                                                    <p  class="plane_title">British AirLines</p>
+                                                                    <p class="Plane_selected">09:14 <span >(LHR)</span> <i  class="fas fa-arrow-right"></i> 03:14 <span >(ZAG)</span></p>
+                                                                    <p class="plane_details">1 Stop VIE . Duration: 4hrs 05mins</p>
+                                                            </li>
+
+                                                            </ul>
+                                                       </div>
+                                                   </div>
+           
+                                               
+                                               </ul>				
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Service&Contact</a>
-                                </li>
+                                    <li class="nav-item dropdown mega-dropdown my-trip">
+                                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> <i  class="fas fa-user-circle   pr-1"></i> My Trip <span >
+                                               <i class="fa fa-chevron-down linear"></i></span></a>				
+                                               <ul class="dropdown-menu mega-dropdown-menu mytrip_block">
+                                                    <div  class="container">
+                                                            <div  class="row signin">
+                                                              <div  class="col  offerSection p-0">
+                                                                 <a  class="p-0" href="#"><img  class="img-fluid" src="https://sandbox-uploads.imgix.net/u/1545814112-1520ef68068c9b178ad17320198d12a6?w=600"></a> 
+                                                              </div>
+                                                            <div  class="col p-0 pl-3">
+                                                                    <p  class="sign_title">One click sign-in with</p>
+                                                                    <form  class="form-horizontal" id="loginform">
+                                
+                                                                        <div  class="page">
+                                                                            <div  class="input_section">
+                                                                           
+                                                                            <input  placeholder="Email Address" required="" type="text">
+                                                                                
+                                                                            <input  class="" placeholder="Password" required="" type="password">
+                                                     
+                                                                            </div>
+                                                                        </div>
+                                                                        <div  class="input-group">
+                                                                            <div  class="checkbox">
+                                                                                    <label  class="container">Remeber me
+                                                                                            <input  type="checkbox">
+                                                                                            <span  class="checkmark"></span>
+                                                                                    </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <button  class="loginbutton" type="submit">Login 
+                                                                            
+                                                                        </button>
+                                
+                                                                        <div  class="seperator"><label >Login in to skybooker with</label></div>
+                                
+                                                                        <div  class="form-group" style="margin-top:10px;text-align: center">
+                                                                            
+                                
+                                                                            <app-signin  _nghost-c1=""><button  class="loginBtn loginBtn--facebook">
+                                        <i  class="fab fa-facebook-f"></i>
+                                </button>
+                                <button  class="loginBtn loginBtn--google">
+                                
+                                        <i  class="fab fa-google"></i>
+                                </button> 
+                                
+                                <div  style="display: grid;justify-content: center">
+                                        <div  class="text-primary">
+                                            <img  src="">
+                                        </div>
+                                
+                                        <div  class="text-primary">
+                                            
+                                        </div>
+                                
+                                        <div  class="text-primary">
+                                            
+                                        </div>
+                                </div>
+                                                                        </div>
+                                                                    </form>
+                                                                 </div>
+                                
+                                                            </div>
+                                                        </div>
+           
+                                               
+                                               </ul>				
+                                    </li>
+
+
+                                
                         </ul>
+
+                        <div  class="sign_up_mobile">
+                                <div  class="dropdown_icon"></div>
+                                <p  class="sign_title">Please Login Here</p>
+                                <button  class="close" type="button">×</button>
+                                <div  class="container">    
+                                    <div  class="row">
+                
+                                        <div  class="col">
+                                           
+                                            <form  class="form-horizontal" id="loginform" role="form">
+                
+                                                <div  class="page">
+                                                    <div  class="input_section">
+                                                   
+                                    <input  class="_input" placeholder="Email Address" required="">
+                                        
+                                    <input  class="" placeholder="Password" required="" type="password">
+                             
+                                                    </div>
+                                                </div>
+                                                <div  class="input-group">
+                                                        <div  class="checkbox">
+                                                                <label  class="container">Remeber me
+                                                                        <input  type="checkbox">
+                                                                        <span  class="checkmark"></span>
+                                                                </label>
+                                                        </div>
+                                                </div>
+                                                <button  class="loginbutton">
+                                                        Login 
+                                                </button>
+                
+                                                <div  class="seperator"><label >Login in to skybooker with</label></div>
+                
+                                                <div  class="form-group" style="margin-top:10px;text-align: center">
+                                                    
+                                                     <app-signin  _nghost-c1=""><button  class="loginBtn loginBtn--facebook">
+                    <i  class="fab fa-facebook-f"></i>
+            </button>
+            <button  class="loginBtn loginBtn--google">
+            
+                    <i  class="fab fa-google"></i>
+            </button> 
+            
+            <div  style="display: grid;justify-content: center">
+                    <div  class="text-primary">
+                        <img  src="">
                     </div>
+            
+                    <div  class="text-primary">
+                        
+                    </div>
+            
+                    <div  class="text-primary">
+                        
+                    </div>
+            </div></app-signin>
+                                                </div>
+                                            </form>
+                
+                
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <li  class="list-group-item list-group-item-action" style="background-color:#f9f9f9">
+            
+            
+            
+                                        <div  class="row">
+            
+                                            <div  class="col   text-center">
+                                                <i  class="fas fa-plane"></i><br > <span  class="small">Flight</span>
+                                            </div>
+                                            <div  class="col   text-center">
+                                                <i  class="fas fa-bus"></i><br > <span  class="small">Transfer</span>
+                                            </div>
+                                            <div  class="col  text-center">
+                                                <i  class="fas fa-umbrella-beach"></i><br > <span  class="small">Sightseeing</span>
+                                            </div>
+                                            <div  class="col   text-center">
+                                                <i  class="fas fa-hotel"></i><br > <span  class="small">Hotel</span>
+                                            </div>
+            
+            
+                                        </div>
+            
+            
+            
+                                    </li>
+                             
+                            <p  class="sign_title">Click Here For More Details</p>
+                            
+             </div>    
+
+                    </div>
+
+
+
+                    
                 </div>
             </nav>
         </header>
@@ -57,74 +274,9 @@
                         <div class="row">
                                 <div class="col-md-6 col-xs-6">
                                     <div class="search_form p-4">
-                <form method="POST" name="test"  action="" class="trip-type-frm">
-                     <div class="row">
-                       <div class="col-6">
-                         <div class="form-group">
-                            <p class="title">Pickup Location</p>  
-                            <div class="input-group mb-2">
-                                <div class="input-group-text"><img src="https://sandbox-uploads.imgix.net/u/1546948481-ea026de454f9ee6eb14ae9f94c0a52a7"></div>
-                                <input type="text" class="form-control" id="map" name="pixk" placeholder="New York City, NY" >
-                            </div>
-                        </div>
-                         </div>
-                         <div class="col-6">
-                                <div class="form-group">
-                                 <p class="title">Drop off Location</p>  
-                                   <div class="input-group mb-2">
-                                       <div class="input-group-text"><img src="https://sandbox-uploads.imgix.net/u/1546948481-ea026de454f9ee6eb14ae9f94c0a52a7"></div>
-                                       <input type="text" class="form-control" id="map2" name="pixk" placeholder="New York City, NY" >
-                                   </div>
-                               </div>
-                         </div>
+                                            <div id="rc-connect-container"></div> 
 
-                         <div class="col-6">
-                                <div class="form-group">
-                                        <p class="title">Pick-up date</p>
-                                   <div class="input-group mb-2">
-                                       <div class="input-group-text">
-                                            <img src="https://sandbox-uploads.imgix.net/u/1546948662-3630958e8febd6a31c09c183fc1ce7a6">    
-                                       </div>
-                                       <input type="text"   class="form-control calendar" id="caleran-ex-6-5-start" name="pixk" placeholder="12/01/2019" >
-                                   </div>
-                               </div>
-                         </div>                         
-                         <div class="col-6">
-                                <div class="form-group">
-                                        <p class="title">Drop-off date</p>
-                                   <div class="input-group mb-2">
-                                       <div class="input-group-text">
-                                            <img src="https://sandbox-uploads.imgix.net/u/1546948662-3630958e8febd6a31c09c183fc1ce7a6">  
-                                       </div>
-                                       <input type="text"    class="form-control calendar" id="caleran-ex-6-5-end" name="pixk" placeholder="20/01/2019" >
-                                   </div>
-                               </div>
-                         </div>
-
-
-
-
-                         <div class="col-6">
-                                <div class="form-group">
-                                   <div class="input-group mb-2">
-                                       <div class="input-group-text"> <img src="https://sandbox-uploads.imgix.net/u/1546948557-d8ad1f3f8d49cec79a43ce523885e77e"></div>
-                                       <input type="text" class="form-control" id="pick" name="pixk" placeholder="05:09" >
-                                   </div>
-                               </div>
-                         </div>                         
-                         <div class="col-6">
-                                <div class="form-group"> 
-                                   <div class="input-group mb-2">
-                                       <div class="input-group-text"><img src="https://sandbox-uploads.imgix.net/u/1546948557-d8ad1f3f8d49cec79a43ce523885e77e"></div>
-                                       <input type="text" class="form-control" id="pick" name="pixk" placeholder="10:00" >
-                                   </div>
-                               </div>
-                         </div>
-
-                        </div>
-
-                        <button type="submit" class="search-btn">Search Cabs <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> </button>	
-                    </form>
+                                            <script id='rc-connect' src='https://www.rentalcars.com/partners/integrations/connect/connect.js' data-container='rc-connect-container' data-preflang='en' data-enable-return-checkbox='true' data-target='parent' data-button-radius='15' data-button-size='large' data-hide-header='true' data-box-shadow='false' data-primary='0771c4' data-primary-text='fff' data-rcid='skybooker584' data-form-padding='2' data-text='fff'></script>
                     <div id="loading" style="display: none;text-align: center;margin-top: 10px;color: #fff;">
                         <span>We are processing your request</span><i class="fa fa-spinner fa-spin fa-3x fa-fw" style="color: #fff;font-size: 20px;margin-left: 8px;"></i>
                         <span class="sr-only">Loading...</span>
@@ -176,6 +328,8 @@
                     </div>            
                   </div>
                 </div>
+                <div  id="overlay"  ></div>
+
  </section>
 
     <!-- Optional JavaScript -->
@@ -183,134 +337,32 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js" ></script>
+<script>
 
-    <link href="https://boinapallirohitrao.github.io/carrentals.github.io/caleran.min.css" rel="stylesheet"/>
-    <script src="https://boinapallirohitrao.github.io/carrentals.github.io/moment.min.js"></script>
-    <script src="https://boinapallirohitrao.github.io/carrentals.github.io/caleran.min.js"></script>
-   
-    <script type="text/javascript">
-       var startDate, endDate, startInstance, endInstance;
-      var fillInputs = function () {
-          startInstance.$elem.val(startDate ? startDate.locale(startInstance.config.format).format(startInstance.config.format) : "");
-          endInstance.$elem.val(endDate ? endDate.locale(endInstance.config.format).format(endInstance.config.format) : "");
-      };
-      $("#caleran-ex-6-5-start").caleran({
-          startEmpty: $("#caleran-ex-6-5-start").val() === "",
-          startDate: $("#caleran-ex-6-5-start").val(),
-          endDate: $("#caleran-ex-6-5-end").val(),
-          minDate: moment().subtract(1, "today").startOf("today"),
-          showOn:"botoom",autoAlign:false,
-          showHeader: false,
-          enableKeyboard: false,
-          oninit: function (instance) {
-              startInstance = instance;
-              if (!instance.config.startEmpty && instance.config.startDate) {
-                  instance.$elem.val(instance.config.startDate.locale(instance.config.format).format(instance.config.format));
-                  startDate = instance.config.startDate.clone();
-              }
-          },
-          onbeforeshow: function (instance) {
-              if (startDate) {
-                  startInstance.config.startDate = startDate;
-                  endInstance.config.startDate = startDate;
-              }
-              if (endDate) {
-                  startInstance.config.endDate = endDate.clone();
-                  endInstance.config.endDate = endDate.clone();
-              }
-              fillInputs();
-              instance.updateHeader();
-              instance.reDrawCells();
-          },
-          onfirstselect: function (instance, start) {
-              startDate = start.clone();
-              startInstance.globals.startSelected = false;
-              startInstance.hideDropdown();
-              endInstance.showDropdown();
-              endInstance.config.minDate = startDate.clone();
-              endInstance.config.startDate = startDate.clone();
-              endInstance.config.endDate = null;
-              endInstance.globals.startSelected = true;
-              endInstance.globals.endSelected = false;
-              endInstance.globals.firstValueSelected = true;
-              endInstance.setDisplayDate(start);
-              if (endDate && startDate.isAfter(endDate)) {
-                  endInstance.globals.endDate = endDate.clone();
-              }
-              endInstance.updateHeader();
-              endInstance.reDrawCells();
-              fillInputs();
-          }
-      });
-      $("#caleran-ex-6-5-end").caleran({
-          startEmpty: $("#caleran-ex-6-5-end").val() === "",
-          startDate: $("#caleran-ex-6-5-start").val(),
-          endDate: $("#caleran-ex-6-5-end").val(),
-          enableKeyboard: false,
-          autoCloseOnSelect: true,
-          showOn:"botoom",autoAlign:false,
-          showHeader: false,
-          oninit: function (instance) {
-              endInstance = instance;
-              if (!instance.config.startEmpty && instance.config.endDate) {
-                  instance.$elem.val(instance.config.endDate.locale(instance.config.format).format(instance.config.format));
-                  endDate = instance.config.endDate.clone();
-              }
-          },
-          onbeforeshow: function (instance) {
-              if (startDate) {
-                  startInstance.config.startDate = startDate;
-                  endInstance.config.startDate = startDate;
-              }
-              if (endDate) {
-                  startInstance.config.endDate = endDate.clone();
-                  endInstance.config.endDate = endDate.clone();
-              }
-              fillInputs();
-              instance.updateHeader();
-              instance.reDrawCells();
-          },
-          onafterselect: function (instance, start, end) {
-              startDate = start.clone();
-              endDate = end.clone();
-              endInstance.hideDropdown();
-              startInstance.config.endDate = endDate.clone();
-              startInstance.globals.firstValueSelected = true;
-              fillInputs();
-              endInstance.globals.startSelected = true;
-              endInstance.globals.endSelected = false;
-          }
-      });
-   
-   </script>
+$(document).ready(function(){
 
-
-
-   <script>
-
-$('button.search-btn').click(function(){
-
-if($('input#map').val() == '' || $('input.calendar').val() == ''){
-    alert('Please Fill the field');
-    return false;
-}
-
-jQuery("#loading").show();
-$('button.search-btn').addClass('disabled');
-
-$('form[name=test]').attr('action','https://www.rentalcars.com/SearchResults.do?locationName=Las+Palmas+Airport&dropLocationName=Las+Palmas+Airport&country=Spain+-+Canary+Islands&dropCountry=Spain+-+Canary+Islands&city=Gran+Canaria&dropCity=Gran+Canaria&location=3591&dropLocation=3591&puDay=11&puMonth=1&puYear=2019&doDay=13&doMonth=1&doYear=2019&puHour=10&puMinute=0&doHour=10&doMinute=0&driversAge=35&page=SearchResults.do&affiliateCode=lonelyplanet&cor=gb&preflang=en&prefcurrency=usd');
-
-$('form[name=test]').submit();
-
+$('.dropdown-menu').click(function(e) {
+    e.stopPropagation();
 });
-       function getGooglePlaces(){
-       var input = document.getElementById('map');
-       var input2 = document.getElementById('map2');
-       var autocomplete1 = new google.maps.places.Autocomplete(input);
-       var autocomplete2 = new google.maps.places.Autocomplete(input2);
-       }
-   </script>
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVlwNSA5nctv_pOwK6XrIrd8i2K3NFBT4&libraries=places&callback=getGooglePlaces"></script>
+// $("li.nav-item.dropdown.mega-dropdown a").click(function(){
+//     $("p").toggleClass("main");
+//   });
+
+$('li.nav-item.dropdown.mega-dropdown a').on("click", function(){
+    $('#overlay').toggleClass('show');
+    $('.linear', this).toggleClass('fa-flip-vertical');
+});
+
+$('button.close').on("click", function(){
+    $('.skybooker-collpase').removeClass('show');
+});
+
+$('body').click(function(){
+    $('#overlay').removeClass('show');
+    $('.linear').removeClass('fa-flip-vertical');
+});
+});
+</script>
   </body>
 </html>
